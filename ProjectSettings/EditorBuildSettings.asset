@@ -8,14 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-<<<<<<< HEAD
+  - enabled: 0
     path: Assets/Scenes/LoadingScreen.unity
     guid: 6910ffa427f423442bb9ccc551415e14
-=======
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2e7da762b6e45b745aef68b8aeeed10b
->>>>>>> bc39bdb92f0dca82e034c80dc506cce451b8a37d
   - enabled: 1
     path: Assets/Scenes/gedung_asrama.unity
     guid: d62f90041d2abfc43a3b511cd4e09bbc
