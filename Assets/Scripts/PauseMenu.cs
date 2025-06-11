@@ -8,9 +8,7 @@ public class PauseMenu : MonoBehaviour
 
     public MonoBehaviour cameraScript;
 
-    // Jika ada beberapa script yang perlu dinonaktifkan
-    public MonoBehaviour[] scriptsToDisable; // Array untuk multiple scripts
-
+    public MonoBehaviour[] scriptsToDisable;
 
     void Update()
     {
@@ -31,7 +29,6 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         
-        // Aktifkan kembali semua script
         foreach (MonoBehaviour script in scriptsToDisable)
         {
             if (script != null)
@@ -48,7 +45,6 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(true);
         
-        // Nonaktifkan semua script dalam array
         foreach (MonoBehaviour script in scriptsToDisable)
         {
             if (script != null)
@@ -63,6 +59,8 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        Time.timeScale = 1f;
+        GameIsPaused = false;
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 
